@@ -4,10 +4,37 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/menu/Menu.java</file>
-            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/properties/SystemProperties.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dao/XuatXuDAO.java</file>
             <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/main/Main.java</file>
-            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/chart/Chart.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/bus/MauSacBUS.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dto/HeDieuHanhDTO.java</file>
             <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/menu/EventMenu.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dto/MauSacDTO.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/bus/KhuVucKhoBUS.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/bus/HeDieuHanhBUS.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dao/JDBCUtil.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dao/MauSacDAO.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/bus/XuatXuBUS.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dto/XuatXuDTO.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/bus/ThuongHieuBUS.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dao/DungLuongRamDAO.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dao/SanPhamDAO.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dto/KhuVucKhoDTO.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dto/ThuongHieuDTO.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dao/DungLuongRomDAO.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dao/KhuVucKhoDAO.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dto/SanPhamDTO.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/chart/Chart.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dao/DAOinterface.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/properties/SystemProperties.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dto/ChiTietSanPhamDTO.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dto/DungLuongRamDTO.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/bus/DungLuongRamBUS.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dao/HeDieuHanhDAO.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dto/PhienBanSanPhamDTO.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/bus/DungLuongRomBUS.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dao/ThuongHieuDAO.java</file>
+            <file>file:/E:/NetBean/TelephoneManagement/src/com/pbl/dto/DungLuongRomDTO.java</file>
         </group>
     </open-files>
 </project-private>
