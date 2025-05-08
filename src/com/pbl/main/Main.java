@@ -1,8 +1,12 @@
 package com.pbl.main;
 
+import com.formdev.flatlaf.FlatLaf;
+import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
+import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import com.pbl.event.EventColorChange;
 import com.pbl.form.Home_Form;
 import com.pbl.form.MainForm;
+import com.pbl.form.SanPhamJPanel;
 import com.pbl.form.Setting_Form;
 import com.pbl.menu.EventMenu;
 import com.pbl.properties.SystemProperties;
@@ -10,7 +14,9 @@ import com.pbl.theme.SystemTheme;
 import com.pbl.theme.ThemeColor;
 import com.pbl.theme.ThemeColorChange;
 import java.awt.Color;
+import java.awt.Font;
 import java.time.LocalDate;
+import javax.swing.UIManager;
 
 public class Main extends javax.swing.JFrame {
 
@@ -31,13 +37,12 @@ public class Main extends javax.swing.JFrame {
             @Override
             public void selectedMenu(int index) {
                 if (index == 1) {
-                   
+                    mainBody.displayForm(new SanPhamJPanel());
+                } else if (index == 2) {
 
-                } else if(index == 2){
-                  
-                } else if(index == 0){
-              
-                }else if (index == 3) {
+                } else if (index == 0) {
+
+                } else if (index == 3) {
                     mainBody.displayForm(settingForm, "Setting");
                 }
             }
@@ -164,7 +169,13 @@ public class Main extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+
             public void run() {
+                FlatRobotoFont.install();
+                FlatLaf.registerCustomDefaultsSource("sample.themes");
+                UIManager.put("defaultFont", new Font(FlatRobotoFont.FAMILY, Font.PLAIN, 13));
+                FlatMacDarkLaf.setup();
+
                 new Main().setVisible(true);
             }
         });

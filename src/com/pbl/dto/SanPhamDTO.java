@@ -4,6 +4,7 @@
  */
 package com.pbl.dto;
 
+import com.pbl.model.other.ModelProfile;
 import java.util.Objects;
 
 /**
@@ -15,6 +16,7 @@ public class SanPhamDTO {
     private int masp;
     private String tensp;
     private String hinhanh;
+    private ModelProfile profile;  
     private int xuatxu;
     private String chipxuly;
     private int dungluongpin;
@@ -47,6 +49,14 @@ public class SanPhamDTO {
         this.thuonghieu = thuonghieu;
         this.khuvuckho = khuvuckho;
         this.soluongton = soluongton;
+    }
+
+    public ModelProfile getProfile() {
+        return profile;
+    }
+
+    public void setProfile(ModelProfile profile) {
+        this.profile = profile;
     }
 
     public int getMasp() {
@@ -246,9 +256,31 @@ public class SanPhamDTO {
         }
         return Objects.equals(this.cameratruoc, other.cameratruoc);
     }
+    public Object[] toTableRow(
+        String brandName,
+        String osName,
+        String countryName,
+        String warehouseName
+    ) {
+        return new Object[]{
+            false,            // checkbox
+            this.masp,        // Mã sản phẩm
+            this,            
+            soluongton,
+            brandName,
+            osName,
+            kichthuocman,
+            chipxuly,
+            dungluongpin,
+            countryName,
+            warehouseName
+        };
+    }
 
     @Override
     public String toString() {
-        return "SanPhamDTO{" + "masp=" + masp + ", tensp=" + tensp + ", hinhanh=" + hinhanh + ", xuatxu=" + xuatxu + ", chipxuly=" + chipxuly + ", dungluongpin=" + dungluongpin + ", kichthuocman=" + kichthuocman + ", hedieuhanh=" + hedieuhanh + ", phienbanhdh=" + phienbanhdh + ", camerasau=" + camerasau + ", cameratruoc=" + cameratruoc + ", thoigianbaohanh=" + thoigianbaohanh + ", thuonghieu=" + thuonghieu + ", khuvuckho=" + khuvuckho + ", soluongton=" + soluongton + '}';
+        return tensp;    
     }
+
+    
 }
